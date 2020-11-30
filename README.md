@@ -12,4 +12,4 @@
 =======
 | 제목 | 📆기간 | 스택 | 주제 |
 |:--- | :--- | :--- | :--- |
-| [vanilla-redux](./vanilla-redux/README.md) | 2020.11.30 | Javascript, React, Redux | vanillaJS, React.js에서의 Redux 동작 알아보기 |
+| [vanilla-redux](./vanilla-redux) | 2020.11.30 | Javascript, React, Redux | vanillaJS, React.js에서의 Redux 동작 알아보기 |
