@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { actionCreators } from '../store';
+import { actionCreators } from '../toolkitStore';
 import Todo from '../components/Todo';
 
 const Home = ({ todo, addTodo }) => {
