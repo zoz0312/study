@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
+import { actionCreators } from '../store';
+import Todo from '../components/Todo';
 
-const Home = () => {
+const Home = ({ todo, addTodo }) => {
   const [text, setText] = useState('');
   const onChange = (e) => {
     setText(e.target.value)
   }
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log('text', text);
+    addTodo(text);
     setText('')
   }
   return (
@@ -17,8 +20,20 @@ const Home = () => {
         <input type="text" value={text} onChange={onChange} />
         <button>Submit</button>
       </form>
+      <ul>{ todo.map((item) => <Todo key={item.id} {...item} />) }</ul>
     </>
   );
 }
 
-export default Home;
+const mapStateToProps = (state, ownProps) => {
+  return { todo: state };
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addTodo: (text) => dispatch(actionCreators.addTodo(text)),
+
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

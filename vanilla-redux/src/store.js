@@ -11,10 +11,10 @@ const addTodo = text => {
   }
 }
 
-const deleteTOdo = id => {
+const deleteTodo = id => {
   return {
     type: DELETE,
-    id
+    id: +id,
   }
 }
 
@@ -31,6 +31,9 @@ const reducer = (state = [], { type, id, text }) => {
 
 const store = createStore(reducer);
 
-store.subscribe();
+export const actionCreators = {
+  addTodo,
+  deleteTodo,
+};
 
 export default store;
