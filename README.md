@@ -5,8 +5,9 @@
 👨‍💻이름: AJu (zoz0312)
 <br />
 🌐블로그: https://blog.naver.com/zoz0312
-<br />
-💻주요스택: JavaScript
+### 💻주요스택
+ - JavaScript
+ - TypeScript
 
 공부목록
 =======
