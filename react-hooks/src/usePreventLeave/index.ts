@@ -1,4 +1,8 @@
-const usePreventLeave = () => {
+const usePreventLeave = (
+): {
+  enablePrevent: Function,
+  disablePrevent: Function,
+} => {
   const listener = (event: Event) => {
     event.preventDefault();
     event.returnValue = false;

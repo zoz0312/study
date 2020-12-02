@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 
-const useScroll = () => {
+const useScroll = (
+): {
+  x: number,
+  y: number,
+} => {
   const [state, setState] = useState({
     x: 0,
     y: 0,
