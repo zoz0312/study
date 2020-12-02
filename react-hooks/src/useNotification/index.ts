@@ -1,7 +1,7 @@
 
 const useNotification = (
   title: string,
-  options: object = {},
+  options: {} = {},
 ) => {
   if (!('Notification' in window)) {
     return;

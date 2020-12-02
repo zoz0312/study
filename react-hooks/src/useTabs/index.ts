@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const useTabs = (
   initalTab: number,
-  allTabs: object[],
+  allTabs: {}[],
 ) => {
   if (!allTabs || !Array.isArray(allTabs)) {
     return;
