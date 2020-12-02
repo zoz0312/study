@@ -1,5 +1,3 @@
-import React, { useEffect, useRef, useState } from 'react';
-
 const usePreventLeave = () => {
   const listener = (event: Event) => {
     event.preventDefault();
@@ -13,14 +11,4 @@ const usePreventLeave = () => {
   return { enablePrevent, disablePrevent }
 }
 
-const App: React.FC = () => {
-  const { enablePrevent, disablePrevent } = usePreventLeave();
-  return (
-    <div className="App">
-      <div>hi</div>
-      <button onClick={enablePrevent}>En</button>
-      <button onClick={disablePrevent}>Dis</button>
-    </div>
-  );
-};
-export default App;
+export default usePreventLeave;
