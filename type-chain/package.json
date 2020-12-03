@@ -1,0 +1,19 @@
+{
+  "name": "type-chain",
+  "version": "1.0.0",
+  "description": "Blockchain with typescript",
+  "main": "index.js",
+  "repository": "https://github.com/zoz0312/study",
+  "author": "AJu<zoz0312@naver.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.1.2"
+  },
+  "scripts": {
+    "start": "tsc-watch --onSuccess \"node  dist/index.js\"",
+    "prestart": "tsc"
+  },
+  "devDependencies": {
+    "tsc-watch": "^4.2.9"
+  }
+}
