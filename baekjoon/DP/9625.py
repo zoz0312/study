@@ -1,4 +1,4 @@
-ll = list(map(int, input().split()))
+# ll = list(map(int, input().split()))
 
 input = int(input())
 # input = 6
