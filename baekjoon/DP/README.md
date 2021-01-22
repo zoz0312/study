@@ -9,3 +9,4 @@
 | [BABBA - 9625](https://www.acmicpc.net/problem/9625) | [문제풀이](./9625.py) |
 | [피보나치 수 5 - 10870](https://www.acmicpc.net/problem/10870) | [문제풀이](./10870.py) |
 | [타일 장식물 - 13301](https://www.acmicpc.net/problem/13301) | [문제풀이](./13301.py) |
+| [파스칼 삼각형 - 15489](https://www.acmicpc.net/problem/15489) | [문제풀이](./15489.py) |
