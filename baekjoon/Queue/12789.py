@@ -24,9 +24,6 @@ while (len(inputs) > 0) or (len(saveStack) != 0):
       else:
         fail = True
         break
-  print('inputs', inputs)
-  print('saveStack', saveStack)
-  print('cnt', cnt)
 
 if (fail == True):
   print('Sad')
