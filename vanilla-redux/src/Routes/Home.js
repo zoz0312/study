@@ -32,7 +32,6 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     addTodo: (text) => dispatch(addTodo(text)),
-
   };
 }
 

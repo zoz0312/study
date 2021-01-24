@@ -1,7 +1,4 @@
-#ifndef __AL_GRAPH__
-#define __AL_GRAPH__
-
-#include "./DLinkedList.h"
+#include "DLinkedList.h"
 
 enum { A, B, C, D, E, F, G, H, I, J };
 
@@ -19,9 +16,7 @@ void GraphInit (ALGraph * pg, int nv);
 void GraphDestroy(ALGraph * pg);
 
 // 간선의 추가
-void AddEdge(ALGraph * pg, int fromV. int toV);
+void AddEdge(ALGraph * pg, int fromV, int toV);
 
 // 간선의 정보 출력
 void ShowGraphEdgeInfo(ALGraph * pg);
-
-#endif
