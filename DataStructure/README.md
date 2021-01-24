@@ -1,4 +1,4 @@
-# 📖 Baekjoon
+# 📖 DataStructure
 ## 인사말
 👋 자료구조 관련 공부 내용입니다.
 
