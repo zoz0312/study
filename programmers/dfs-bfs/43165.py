@@ -23,10 +23,9 @@ def dfs_solution(numbers, target):
 def dfs(idx, numbers, target, value):
   global dfs_answer
   N = len(numbers)
-  if (idx == N and target == value):
-    dfs_answer += 1
-    return
   if (idx == N):
+    if (target == value):
+      dfs_answer += 1
     return
 
   dfs(idx + 1, numbers, target, value + numbers[idx])
