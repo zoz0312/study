@@ -18,7 +18,7 @@ class Node:
   def next(self):
     return self.__next
 
-  @data.setter
-  def data(self, n):
+  @next.setter
+  def next(self, n):
     self.__next = n
 

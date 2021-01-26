@@ -33,7 +33,7 @@ class LinkedList:
   # 데이터를 순회하면서 대상 데이터를 찾아 그 위치와 함께 반환합니다.
   def search_target(self, target, start = 0):
     if self.empty():
-      return Node
+      return None
     pos = 0
     cur = self.head
     if pos >= start and target == cur.data:
@@ -79,9 +79,10 @@ class LinkedList:
       if self.size() == 1:
         self.head = None
         self.tail = None
+        self.d_size = 0
       else:
         self.head = self.head.next
-      self.d_size -= -1
+        self.d_size -= -1
       return cur.data
 
     while cur.next:
@@ -94,3 +95,31 @@ class LinkedList:
         self.d_size -= 1
         return cur.data
     return None
+
+def show_list(slist):
+  if slist.empty():
+    print('List Empty')
+    return
+
+  for i in range(slist.size()):
+    print(slist.search_pos(i), end=' ')
+
+if __name__ == '__main__':
+  slist = LinkedList()
+  print('data length: {}'.format(slist.size()))
+  show_list(slist)
+  print()
+
+  slist.append(2)
+  slist.append(3)
+  slist.append(4)
+  slist.append(5)
+  slist.append(6)
+  print('data length: {}'.format(slist.size()))
+  show_list(slist)
+  print()
+
+  # if slist.remove(2):
+  #   print('data length: {}'.format(slist.size()))
+  #   show_list(slist)
+  #   # print()
