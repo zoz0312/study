@@ -1,6 +1,6 @@
 from treeNode import TreeNode
 
-class BianryTree:
+class BinaryTree:
   def __init__(self):
     self.root = None
 
@@ -15,10 +15,10 @@ class BianryTree:
     return new_node
 
   def get_node_data(self, cur):
-    return cur.get_data()
+    return cur.data
 
   def set_node_data(self, cur, data):
-    cur.set_data(data)
+    cur.data = data
 
   def get_left_sub_tree(self, cur):
     return cur.left
