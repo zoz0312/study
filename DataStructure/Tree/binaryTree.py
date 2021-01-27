@@ -31,3 +31,30 @@ class BinaryTree:
 
   def make_right_sub_tree(self, cur, right):
     cur.right = right
+
+  # 전위순위
+  def preorder_traverse(self, cur, func):
+    if not cur:
+      return
+
+    func(cur.data)
+    self.preorder_traverse(cur.left, func)
+    self.preorder_traverse(cur.right, func)
+
+  # 중위 순위
+  def inorder_traverse(self, cur, func):
+    if not cur:
+      return
+
+    self.inorder_traverse(cur.left, func)
+    func(cur.data)
+    self.inorder_traverse(cur.right, func)
+
+  # 후위 순위
+  def postorder_traverse(self, cur, func):
+    if not cur:
+      return
+
+    self.postorder_traverse(cur.left, func)
+    self.postorder_traverse(cur.right, func)
+    func(cur.data)
