@@ -12,3 +12,6 @@
 | [문자열처리 (String)](./String) |
 | [큐 (Queue)](./Queue) |
 | [재귀 (Recursion)](./Recursion) |
+| [깊이 우선 탐색 (DFS)](./DFS) |
+| [너비 우선 탐색 (BFS)](./BFS) |
+| [이진 탐색 (BinarySearch)](./BinarySearch) |
