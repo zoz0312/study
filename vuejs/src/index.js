@@ -1,7 +1,13 @@
-const test = () => {
-  return '123';
-};
+import { createApp } from 'vue';
+import App from './App.vue';
 
-export {
-  test,
-};
+console.log('createApp', 'index.js');
+createApp(App).mount('#app');
+
+// const test = () => {
+//   return '123';
+// };
+//
+// export {
+//   test,
+// };

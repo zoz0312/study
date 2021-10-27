@@ -1,7 +1,11 @@
 const path = require('path');
 const webpack = require('webpack');
+const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
+  // resolve: {
+  //   extensions: ['.js', '.vue'],
+  // },
   mode: 'development',
   entry: {
     'tk.index': './src/index.js',
@@ -23,6 +27,16 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.vue$/,
+        use: 'vue-loader'
+      },
+      {
+        test: /\.s?css$/,
+        use: [
+          'vue-style-loader',
+        ]
+      },
       {
         test: /\.js$/,
         exclude: [/node_modules/, /min\.js$/],
@@ -51,16 +65,17 @@ module.exports = {
       }
     ]
   },
-  resolve: {
-    alias: {
-      vue$: 'vue/dist/vue.esm.js'
-    }
-  },
+  // resolve: {
+  //   alias: {
+  //     vue$: 'vue/dist/vue.esm.js'
+  //   }
+  // },
   plugins: [
     new webpack.ProvidePlugin({
-      Vue: ['vue/dist/vue.esm.js', 'default'],
+      // Vue: ['vue/dist/vue.esm.js', 'default'],
       axios: ['axios', 'default'],
       moment: 'moment'
-    })
+    }),
+    new VueLoaderPlugin(),
   ]
 };
