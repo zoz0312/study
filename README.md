@@ -17,5 +17,4 @@
 | [react-hooks](./react-hooks) | 2020.12.02 | TypeScript, React | 나만의 React Hooks 제작해보기 |
 | [type-chain](./type-chain) | 2020.12.03 | TypeScript | TypeScript로 chaining 구현하기 |
 | [백준](./baekjoon) | - | python3 | 백준 문제 풀이 |
-| [자료구조](./DataStructure) | - | python3, C | 자료구조 공부 |
-| [CSS 애니메이션](./CssAnimations) | - | CSS | CSS의 애니메이션 공부 |
+| [Vue3](./vuejs) | - | Javascript, TypeScript, Vue3 | VueJS 스터디 |
