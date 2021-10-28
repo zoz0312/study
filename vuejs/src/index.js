@@ -1,13 +1,19 @@
 import { createApp } from 'vue';
+import Vuex from 'vuex';
 import App from './App.vue';
+import { store } from './store/tk.main';
 
-console.log('createApp', 'index.js');
-createApp(App).mount('#app');
+const app = createApp(App);
+app.use(Vuex);
+app.use(store);
+app.mount('#app');
 
-// const test = () => {
-//   return '123';
-// };
-//
-// export {
-//   test,
-// };
+window.tk = {};
+window.tk.main = (function () {
+  const data = {};
+  return {
+    init: function (injectData) {
+      console.log('injectData', injectData);
+    }
+  };
+})();
