@@ -2,7 +2,7 @@ import { createApp } from 'vue';
 import Vuex from 'vuex';
 import App from './App.vue';
 import { useStore } from "vuex";
-import ReservationWaiting from './store/tk.reservation.waiting/index';
+import ReservationWaiting from './store/tk.reservation.waiting';
 
 const app = createApp(App);
 app.use(Vuex);
@@ -13,9 +13,13 @@ app.mount('#app');
 
 window.tk = {};
 window.tk.main = (function () {
-  const data = {};
+  let flag = false;
   return {
     init: function (injectData) {
+      if (flag) {
+        return;
+      }
+      flag = true;
       ReservationWaiting.commit('SET_SEAT_DATA', injectData);
       console.log('injectData', injectData);
     }
