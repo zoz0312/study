@@ -13,8 +13,12 @@
   </div>
 </template>
 
-<script>
-import { computed, onMounted, toRef } from "vue";
+<script lang="ts">
+interface fType {
+  lang: string;
+}
+
+import { computed } from "vue";
 import { useStore } from 'vuex';
 
 export default {
@@ -25,6 +29,9 @@ export default {
 
     const doubleGetters = computed(() => store.getters.doubleCount);
     // const inc = () => store.commit("setCounter", counter.value + 1);
+    const obj: fType = {
+      lang: '123',
+    }
 
     return { seat, test, doubleGetters };
   },

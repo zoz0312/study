@@ -8,7 +8,7 @@ module.exports = {
   // },
   mode: 'development',
   entry: {
-    'tk.index': './src/index.js',
+    'tk.index': './src/index.ts',
   },
   output: {
     filename: '[name].js',
@@ -27,6 +27,14 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.tsx?$/,
+        loader: 'ts-loader',
+        options: {
+          appendTsSuffixTo: [/\.vue$/],
+          // configFile: 'tsconfig.json',
+        },
+      },
       {
         test: /\.vue$/,
         use: 'vue-loader'
@@ -64,6 +72,9 @@ module.exports = {
         use: 'raw-loader'
       }
     ]
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
   },
   // resolve: {
   //   alias: {
