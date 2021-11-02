@@ -3,9 +3,12 @@ const webpack = require('webpack');
 const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
-  // resolve: {
-  //   extensions: ['.js', '.vue'],
-  // },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js', '.json'],
+    alias: {
+      '@utils': path.resolve(__dirname, 'src/utils'),
+    },
+  },
   mode: 'development',
   entry: {
     'tk.index': './src/index.ts',
@@ -72,9 +75,6 @@ module.exports = {
         use: 'raw-loader'
       }
     ]
-  },
-  resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
   },
   // resolve: {
   //   alias: {

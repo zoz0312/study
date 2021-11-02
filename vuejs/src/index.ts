@@ -3,10 +3,11 @@ import Vuex from 'vuex';
 import App from './App.vue';
 // import { useStore } from "vuex";
 import ReservationWaiting from './store/tk.reservation.waiting/index';
-import { InitData } from "./utils/InitData";
+// import { InitData } from "./utils/initData";
+import { InitData } from '@utils/initData';
+
 
 const app = createApp(App);
-// app.use(Vuex);
 app.use(ReservationWaiting);
 app.mount('#app');
 
