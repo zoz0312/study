@@ -1,11 +1,7 @@
 import { createApp } from 'vue';
-import Vuex from 'vuex';
 import App from './App.vue';
-// import { useStore } from "vuex";
-import ReservationWaiting from './store/tk.reservation.waiting/index';
-// import { InitData } from "./utils/initData";
+import ReservationWaiting from '@store/tk.reservation.waiting/index';
 import { InitData } from '@utils/initData';
-
 
 const app = createApp(App);
 app.use(ReservationWaiting);

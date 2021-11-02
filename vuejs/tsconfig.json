@@ -1,9 +1,6 @@
 {
+  "extends": "./config/tsconfig.path.json",
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@utils/*": ["src/utils/*"]
-    },
     "outDir": "./dist/",
     "target": "esnext",
     "module": "esnext",

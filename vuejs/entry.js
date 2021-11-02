@@ -1,4 +1,4 @@
-export const entry = {
+module.exports = {
   'tk.index': './src/index.ts',
-  'tk.test': './js'
+  // 'tk.test': './js'
 }
