@@ -4,6 +4,7 @@ const { VueLoaderPlugin } = require('vue-loader');
 const entry = require('./config/entry');
 
 module.exports = {
+  entry,
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.json'],
     alias: {
@@ -12,7 +13,6 @@ module.exports = {
     },
   },
   mode: 'development',
-  entry,
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
