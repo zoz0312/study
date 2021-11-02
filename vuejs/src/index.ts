@@ -3,26 +3,16 @@ import Vuex from 'vuex';
 import App from './App.vue';
 // import { useStore } from "vuex";
 import ReservationWaiting from './store/tk.reservation.waiting/index';
+import { InitData } from "./utils/InitData";
 
 const app = createApp(App);
 // app.use(Vuex);
 app.use(ReservationWaiting);
 app.mount('#app');
 
-declare global {
-  interface Window {
-    initData: (injectData: any) => void;
-  }
-}
-
-window.initData = (function () {
-  let flag = false;
-  return function (injectData: any) {
-    if (flag) {
-      return;
-    }
-    flag = true;
+InitData( {
+  doInit: (injectData: any) => {
     ReservationWaiting.commit('SET_SEAT_DATA', injectData);
     console.log('injectData', injectData);
-  }
-})();
+  },
+});
