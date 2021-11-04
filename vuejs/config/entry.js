@@ -1,4 +1,4 @@
 module.exports = {
-  'tk.index': './src/index.ts',
-  'tk.reservation.waiting': './src/page/ReservationWaiting/ReservationWaiting.ts'
+  'tk.main': './src/page/Main/Main.ts',
+  'tk.reservation.waiting': './src/page/ReservationWaiting/ReservationWaiting.ts',
 }
