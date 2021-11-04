@@ -1,4 +1,4 @@
-import React, {FunctionComponentElement} from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 
 export const DomRender = (Component: React.FC) => {
