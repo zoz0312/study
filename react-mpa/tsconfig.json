@@ -1,5 +1,5 @@
 {
-//  "extends": "./config/tsconfig.path.json",
+  "extends": "./config/tsconfig.path.json",
   "compilerOptions": {
     "outDir": "./dist/",
     "target": "esnext",
