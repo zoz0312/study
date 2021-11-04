@@ -1,15 +1,14 @@
 import { createApp } from 'vue';
 import Main from './Main.vue';
-import ReservationWaiting from '@store/tk.reservation.waiting/index';
+import MainStore from '@store/main/main.index';
 import { InitData } from '@utils/initData';
 
 const app = createApp(Main);
-app.use(ReservationWaiting);
+app.use(MainStore);
 app.mount('#app');
 
 InitData( {
     doInit: (injectData: any) => {
-        ReservationWaiting.commit('SET_SEAT_DATA', injectData);
-        console.log('injectData', injectData);
+        MainStore.commit('SET_SEAT_DATA', injectData);
     },
 });

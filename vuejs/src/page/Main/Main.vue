@@ -24,7 +24,7 @@ import { useStore } from 'vuex';
 export default {
   setup() {
     const store = useStore();
-    const seat = computed(() => store.state.seat.seat);
+    const seat = computed(() => store.state.seat);
     const test = computed(() => store.getters);
 
     const doubleGetters = computed(() => store.getters.doubleCount);

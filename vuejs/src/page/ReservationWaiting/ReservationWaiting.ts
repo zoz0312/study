@@ -10,6 +10,5 @@ app.mount('#app');
 InitData( {
   doInit: (injectData: any) => {
     ReservationWaitingStore.commit('SET_SEAT_DATA', injectData);
-    console.log('tk.reservation.waiting', injectData);
   },
 });
