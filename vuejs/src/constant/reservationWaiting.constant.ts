@@ -1,4 +1,3 @@
-export const enum SEAT_TYPE {
-    'SEAT' = 'SEAT',
-    'SECTION' = 'SECTION',
+const enum SEAT {
+  'TEST' = 'TEST',
 }
