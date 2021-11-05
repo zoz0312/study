@@ -1,14 +1,13 @@
 const path = require('path');
 const webpack = require('webpack');
 const entry = require('./config/entry');
+const alias = require('./config/alias');
 
 module.exports = {
   entry,
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.json'],
-    alias: {
-      '@utils': path.resolve(__dirname, 'src/utils'),
-    },
+    alias,
   },
   mode: 'development',
   output: {
