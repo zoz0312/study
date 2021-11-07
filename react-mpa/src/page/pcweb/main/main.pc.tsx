@@ -1,21 +1,11 @@
 import React from 'react';
-import {DomRender} from '@utils/DomRender';
-import {useRecoilState} from "recoil";
-import {mainState} from "@store/pcweb/main/main.atom";
 
-const App: React.FC = () => {
-  const [main, setMain] = useRecoilState(mainState);
-
+const MainPC: React.FC = () => {
   return (
     <div>
-      Hello, Webpack!
-      { main.map(val => (
-        <div>
-          {{ val }}
-        </div>
-      )) }
+      PC WEB
     </div>
   );
 }
 
-DomRender(App);
+export default MainPC;
