@@ -1,10 +1,11 @@
 import React from 'react';
+import {MainLayoutMobile} from "@components/Layout/Main.layout.mobile";
 
 const MainMOBILE: React.FC = () => {
   return (
-    <div>
+    <MainLayoutMobile>
       Mobile WEB
-    </div>
+    </MainLayoutMobile>
   );
 }
 

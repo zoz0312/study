@@ -5,7 +5,8 @@
       "@utils/*": ["src/utils/*"],
       "@store/*": ["src/store/*"],
       "@dto/*": ["src/dto/*"],
-      "@i18n/*": ["src/i18n/*"]
+      "@i18n/*": ["src/i18n/*"],
+      "@components/*": ["src/components/*"]
     }
   }
 }
