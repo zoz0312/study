@@ -1,11 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { RootState } from "../redux/reducers";
-import {
-  increase,
-  decrease,
-  increaseBy,
-} from "../redux/reducers/counter.toolkit";
+import { RootState } from "../redux";
+import { increase, decrease, increaseBy } from "../redux/counter.toolkit";
 // } from "../redux/reducers/counter";
 import Counter from "../components/Counter";
 
