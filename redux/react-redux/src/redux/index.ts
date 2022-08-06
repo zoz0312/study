@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
 import counter from "./counter.toolkit";
-import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import errorMiddleware from "./middleware/error";
 
 const rootReducer = combineReducers({
